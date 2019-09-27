@@ -53,7 +53,7 @@ class VerInfo(interfaces_plugins.PluginInterface):
         """
 
         if layer_name is None:
-            raise ValueError("Layer must be a string not None")
+            raise TypeError("Layer must be a string not None")
 
         pe_data = io.BytesIO()
 
